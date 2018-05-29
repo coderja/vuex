@@ -38,8 +38,8 @@ export default {
       // ...mapState([
       //   'count'
       // ]),
-      // ...mapState([
-      //   'num'
+      // ...mapGetters([
+        // 'num'
       // ]),
       num(){
         return this.$store.getters.num
