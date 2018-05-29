@@ -49,6 +49,7 @@ export default {
     ...mapMutations([
       'jia'
     ]),
+    
     ...mapActions([
       'jiaplus'
     ]),
