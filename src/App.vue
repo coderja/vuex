@@ -32,9 +32,12 @@ export default {
     }
   },
   computed:{
-      ...mapState([
-        'count'
-      ]),
+      count(){
+        return this.$store.state.count
+      },
+      // ...mapState([
+      //   'count'
+      // ]),
       // ...mapState([
       //   'num'
       // ]),
