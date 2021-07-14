@@ -10,6 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "@sentry/tracing": "^6.9.0",
+    "@sentry/vue": "^6.9.0",
     "vue": "^2.5.16",
     "vuex": "^3.0.1"
   },

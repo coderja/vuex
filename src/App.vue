@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    
-    <img src="./assets/logo.png">
+
+    <img src="./assets/logo.png" @click="throwError">
     <h1>{{ msg}}</h1>
     <h3>state:</h3>
     <div>{{$store.state.count}}</div>
@@ -46,10 +46,13 @@ export default {
       }
   },
   methods:{
+    throwError() {
+      console.log('123')
+    },
     ...mapMutations([
       'jia'
     ]),
-    
+
     ...mapActions([
       'jiaplus'
     ]),
@@ -62,8 +65,8 @@ export default {
       loading.style.display="none"
     }
   }
-  
- 
+
+
 }
 </script>
 
